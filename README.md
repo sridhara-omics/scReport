@@ -2,6 +2,9 @@
 
 scReport - Reporting results of single cell analysis
 
+Batch effects?
+Imputation?
+
 Seurat analyses of publicly available data and other datasets
 PCA, UMAP and tSNE plots and other plots for the top genes ONLY
 
