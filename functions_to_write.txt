@@ -1,0 +1,12 @@
+Functions to write:
+0. SeuratPreprocess (includes general QC and picking relevant cells i.e., 3 cells should have gene of interest)
+1. SeuratTransform (includes normalize, find highly variable features and scale)
+2. SeuratClusters (includes Neighbors and clusters)
+3. SeuratLowDimension (includes PCA, UMAP, TSNE)
+4. SeuratMarkersOneToOne (with relevant thresholds for pct1 and pct2)
+5. SeuratMarkersOneToMany (see above)
+6. SeuratReactomeGSAEntireDataset
+7. SeuratReactomeGSAMarkersOutput
+8. SeuratDEPlots
+9. SeuratPathwayPlots
+10. SeuratReporting (includes tables and plots and generate PDF) 
