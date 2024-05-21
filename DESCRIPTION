@@ -1,0 +1,13 @@
+Package: scReport
+Title: Reporting DE Genes And Pathways for Seurat Single Cell Analysis
+Version: 0.0.0.9000
+Authors@R: 
+    person("Viswanadham", "Sridhara", , "Sridhara.Omics@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0688-6140"))
+Description: Reports markers list, along with processed differentially expressed genes and their related pathways for each cluster identified by Seurat.
+Imports:
+  Seurat
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
