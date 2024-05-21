@@ -2,3 +2,12 @@
 
 export(SeuratPreprocess)
 importFrom(Seurat,CreateSeuratObject)
+importFrom(Seurat,FindClusters)
+importFrom(Seurat,FindNeighbors)
+importFrom(Seurat,FindVariableFeatures)
+importFrom(Seurat,NormalizeData)
+importFrom(Seurat,PercentageFeatureSet)
+importFrom(Seurat,RunPCA)
+importFrom(Seurat,RunTSNE)
+importFrom(Seurat,RunUMAP)
+importFrom(Seurat,ScaleData)
