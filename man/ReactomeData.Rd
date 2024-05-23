@@ -7,7 +7,7 @@
 ReactomeData(lowdim_seurat_object)
 }
 \arguments{
-\item{lowdim_seurat_object}{}
+\item{lowdim_seurat_object}{Seurat object that has clusters information}
 }
 \value{
 list

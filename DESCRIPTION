@@ -6,7 +6,8 @@ Authors@R:
            comment = c(ORCID = "0000-0003-0688-6140"))
 Description: Reports markers list, along with processed differentially expressed genes and their related pathways for each cluster identified by Seurat.
 Imports:
-  Seurat
+  Seurat,
+  ReactomeGSA
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

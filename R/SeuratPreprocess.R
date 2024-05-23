@@ -12,7 +12,7 @@
 #' @param ... Additional arguments to be passed to Seurat::CreateSeuratObject.
 #' @return A Seurat object.
 SeuratPreprocess <- function(counts_data, ...) {
-  n_size = dim(mca.matrix.10K)[2]
+  n_size = dim(counts_data)[2]
 
   seurat_object <- Seurat::CreateSeuratObject(counts = counts_data, project = "project_title", min.cells = 3, min.features = 200)
 

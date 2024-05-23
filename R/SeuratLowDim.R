@@ -8,7 +8,7 @@
 #' @importFrom Seurat FindClusters
 #' @importFrom Seurat RunTSNE
 #' @importFrom Seurat RunUMAP
-#' @param preprocessed_object A scaled Seurat object.
+#' @param scaled_seurat_object A scaled Seurat object.
 #' @param ... Additional arguments to be passed to convert to low dimensional data frame.
 #' @return A Seurat object.
 SeuratLowDim <- function(scaled_seurat_object, ...) {
