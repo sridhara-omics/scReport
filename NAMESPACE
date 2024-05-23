@@ -2,10 +2,12 @@
 
 export(ReactomeData)
 export(SeuratLowDim)
+export(SeuratMarkers)
 export(SeuratPreprocess)
 importFrom(ReactomeGSA,analyse_sc_clusters)
 importFrom(ReactomeGSA,pathways)
 importFrom(Seurat,CreateSeuratObject)
+importFrom(Seurat,FindAllMarkers)
 importFrom(Seurat,FindClusters)
 importFrom(Seurat,FindNeighbors)
 importFrom(Seurat,FindVariableFeatures)

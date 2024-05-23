@@ -1,5 +1,5 @@
 Package: scReport
-Title: Reporting DE Genes And Pathways for Seurat Single Cell Analysis
+Title: Seurat Wrapper For Reporting DE Genes And Reactome Pathways
 Version: 0.0.0.9000
 Authors@R: 
     person("Viswanadham", "Sridhara", , "Sridhara.Omics@gmail.com", role = c("aut", "cre"),
