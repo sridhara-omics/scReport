@@ -20,39 +20,18 @@ mca.metadata <- read.csv(file = "data/MCA_All-batch-removed-assignments.csv", ro
 mca.matrix.1K <- mca.matrix[,1:1000]
 ```
 
-## [1]. Function to convert Counts Data to Normalized and Scaled Seurat object for highly variable genes.
-## [2]. Function to convert Scaled Seurat Object from [1] to object that has clusters identified and data transformed to visualize in 2d (ie, PCA followed by t-SNE and UMAP).
+# [1]. SeuratPreprocess Function to convert Counts Data to Normalized and Scaled Seurat object for highly variable genes.
+# [2]. SeuratLowDim Function to convert Scaled Seurat Object from [1] to object that has clusters identified and data transformed to visualize in 2d (ie, PCA followed by t-SNE and UMAP).
 ```{r SeuratPreprocess and SeuratLowDim functions}
 scaled_seurat_object <- SeuratPreprocess(mca.matrix.1K)
 
 low_dim_object <- SeuratLowDim(scaled_seurat_object)
 ```
 
-## [3]. The Seurat markers list is slightly modified to pick a threshold for pct.1 and pct.2 i.e., the minimum number of cells where the gene of interest is seen.
-## [4]. Next, we use Reactome GSA R package to identify the pathways of interest using the cluster information of Seurat object.
+# [3]. SeuratMarkers Function to convert seurat object to all markers list, along with significant markers (based on minimum percent of cells in the cluster).
+# [4]. ReactomeData Function to convert seurat object to get the pathways identified using ReactomeGSA R package.
 
 ```{r}
+Markers_list <- SeuratMarkers(low_dim_object)
 Reactome_pathways_object <- ReactomeData(low_dim_object)
 ```
-
-## Here is a quick glimpse of the output objects and tables outputted.
-```{r}
-scaled_seurat_object
-```
-
-```{r}
-low_dim_object
-```
-
-```{r}
-Reactome_pathways_object[1]
-```
-
-```{r}
-Reactome_pathways_object[2]
-```
-
-```{r}
-Reactome_pathways_object[3]
-```
-
