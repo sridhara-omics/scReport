@@ -1,5 +1,5 @@
 
-## SEURAT WRAPPER TO REPORT SIGNIFICANT MARKERS AND REACTOME PATHWAYS
+## Seurat Wrapper to run end-to-end single cell analysis pipeline using 2 simplified functions, and report expressed markers and associated Reactome pathways.
 
 A new Seurat user is generally interested to run the single cell pipeline with less effort, quickly look at the expressed markers in different clusters and identify the pathways of interest within each cluster. This repository is a simple R package that has 4 functions, 
 1st function to transform counts data to scaled seurat object, 
