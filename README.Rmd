@@ -1,3 +1,8 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
 
 ## SEURAT WRAPPER TO REPORT SIGNIFICANT MARKERS AND REACTOME PATHWAYS
 
@@ -21,7 +26,7 @@ library(scReport)
 # Loading sample counts data (Mouse cell atlas)
 mca.matrix <- readRDS(file = "data/MCA_merged_mat.rds")
 mca.metadata <- read.csv(file = "data/MCA_All-batch-removed-assignments.csv", row.names = 1)
-mca.matrix.10K <- mca.matrix[,1:10000]
+mca.matrix.10K <- mca.matrix[,1:1000]
 ```
 
 ## [1]. Function to convert Counts Data to Normalized and Scaled Seurat object for highly variable genes.
