@@ -2,10 +2,10 @@
 ## Seurat wrapper to report expressed markers and associated Reactome pathways.
 
 This repository is a simple R package that has 4 main functionalities:  
-1st function to transform counts data to scaled seurat object,  
-2nd function to convert the scaled object to low-dimensinoal object with cluster information,  
-3rd function identifies the entire list of markers, along with significant markers (based on minimum percent of cells) and  
-4th function to identify the Reactome GSA pathways on the expressed genes in the clusters.  
+1. SeuratPreprocess function to transform counts data to scaled seurat object,  
+2. SeuratLowDim function to convert the scaled object to low-dimensinoal object with cluster information,  
+3. SeuratMarkers function identifies the entire list of markers, along with significant markers (based on minimum percent of cells) and  
+4. ReactomeData function to identify the Reactome GSA pathways on the expressed genes in the clusters.  
 
 ```{r cars}
 library(Seurat)
